@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
@@ -40,7 +43,40 @@
   <div class="container" id="restOfQuestions">
     <p>Thanks for answering that. That will help me find what languages are currently avaliable. Here's a few more questions to narrow your results! Please answer as honestly as you can.</p>
     <form id="mainBody">
-
+      </label>
+      <label for="questionOne">1. What are you looking to create?</label>
+      <select id="questionOne" class="form-control" onchange="goalQuestion()">
+        <option>-- Select Answer --</option>
+        <option value="eighties">An email to my grandson, Nathan.</option>
+        <option value="nineties">The next hot videogame!</option>
+        <option value="zeroZero">A simple, text-heavy webpage.</option>
+        <option value="thisYear">A webpage that has a lot of functionality in it.</option>
+      </select>
+      <br>
+      <label for="questionTwo">2. How do you feel about crocs?</label>
+      <select id="questionTwo" class="form-control" onchange="crocQuestion()">
+        <option>-- Select Answer --</option>
+        <option value="love">I absolutely love crocs!</option>
+        <option value="loveagain">Crocs are the best! But a different option.</option>
+      </select>
+      <br>
+      <label for="questionThree">3. We've been trying to reach you about your car's extended warranty. That being said, how wide is block silver eight four Titanic?</label>
+      <select id="questionThree" class="form-control" onchange="randomQuestion()">
+        <option>-- Select Answer --</option>
+        <option value="banana">Eight bananas.</option>
+        <option value="pants">I left my pants on the yacht.</option>
+        <option value="help">Help! I need somebody! Help! Not just anybody!</option>
+        <option value="goldfish">I've misplaced my goldfish.</option>
+      </select>
+      <br>
+      <label for="questionFour">4. Did Ryan nail this assignment?</label>
+      <select id="questionFour" class="form-control" onchange="randomQuestion()">
+        <option>-- Select Answer --</option>
+        <option value="banana">Yes.</option>
+        <option value="pants">I left my pants on the yacht.</option>
+        <option value="help">Help! I need somebody! Help! Not just anybody!</option>
+        <option value="goldfish">I've misplaced my goldfish.</option>
+      </select>
     </form>
     </div>
   </div>
