@@ -1,3 +1,13 @@
 .container {
   border: solid black;
+  margin: 50px;
+  padding: 30px;
+}
+
+#resume {
+  display: none;
+}
+
+#whoops {
+  display: none;
 }

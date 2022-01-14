@@ -13,14 +13,30 @@
 <body>
   <div class="container">
     <p>Hello, My name is X92jf and I've time travelled back from the year 2739. The details of why I've returned to this year aren't important, but I hear you're looking to learn how to program. Is that true?</p>
-    <form id="startForm">
-      <select>
-      <option>-- Select Answer --</option>
-      <option>Yes, I do want to learn! But I'm unsure which one!</option>
-      <option>No, you must have me mistaken for someon else.</option>
-    </select>
+    <form id="startForm" class="form-control" onchange="getThisStarted()">
+      <select id="getStarted">
+        <option>-- Select Answer --</option>
+        <option value="yes">Yes, I do want to learn! But I'm unsure which one!</option>
+        <option value="no">No, you must have me mistaken for someone else.</option>
+      </select>
     </form>
-  
+  </div>
+  <div class="container" id="whoops">
+    My apologies. I guess I can't show the skills I've learned this week. Would you mind changing your answer anyway?
+  </div>
+  <div class="container" id="resume">
+  <p>That's lovely. If you wouldn't mind, I'm going to ask you a few questions to see which language is right for you.</p>
+  <form>
+    <p>Would you mind telling me what decade we're in?</p>
+    <select>
+      <option>-- Select Answer --</option>
+      <option>We're in the 1980's.</option>
+      <option>It's the 1990's.</option>
+      <option>It's the 2000's.</option>
+      <option>The year is after 2010.</option>
+    </select>
+  </form>
+  </div>
   
   </div>
 </body>
