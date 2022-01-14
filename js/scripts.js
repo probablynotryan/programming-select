@@ -21,30 +21,30 @@ $(document).ready(function() {
     const questionFive = parseInt($("#questionFive").val());
     const poolOurAnswers = questionOne + questionTwo + questionThree + questionFour + questionFive;
 
-      if (questionOne === 0 || questionTwo === 0 || questionThree === 0 || questionFour === 0 || questionFive === 0){
-        $("#missingInfo").toggle();
-        return;
-      }
-      if (poolOurAnswers > 0 && poolOurAnswers < 200) {
-        $(".results").text("Markdown");
-        $("#results").toggle();
-      } 
-      if (poolOurAnswers >199 && poolOurAnswers <300) {
-        $(".results").text("C#");
-        $("#results").toggle();
-      } 
-      if (poolOurAnswers >299 && poolOurAnswers <400) {
-        $(".results").text("HTML");
-        $("#results").toggle();
-      } 
-      if (poolOurAnswers >399 && poolOurAnswers <500) {
-        $(".results").text("Javascript");
-        $("#results").toggle();
-      } 
-      if (poolOurAnswers >499) {
-        $(".results").text("ERROR! DANGER WILL ROBINSON! DANGER!");
-        $("#results").toggle();
-      } 
+    if (questionOne === 0 || questionTwo === 0 || questionThree === 0 || questionFour === 0 || questionFive === 0){
+      $("#missingInfo").toggle();
+      return;
+    }
+    if (poolOurAnswers > 0 && poolOurAnswers < 200) {
+      $(".results").text("Markdown");
+      $("#results").toggle();
+    } 
+    if (poolOurAnswers >199 && poolOurAnswers <300) {
+      $(".results").text("C#");
+      $("#results").toggle();
+    } 
+    if (poolOurAnswers >=300 && poolOurAnswers <400) {
+      $(".results").text("HTML");
+      $("#results").toggle();
+    } 
+    if (poolOurAnswers >=400 && poolOurAnswers <500) {
+      $(".results").text("Javascript");
+      $("#results").toggle();
+    } 
+    if (poolOurAnswers >499) {
+      $(".results").text("ERROR! DANGER, WILL ROBINSON! DANGER!");
+      $("#results").toggle();
+    } 
   });
 });
 
@@ -62,13 +62,11 @@ function getThisStarted() {
   } else if (letsGetStarted === "no") {
     $("#whoops").toggle();
   }
-
 };
 
 function yearResponse() {
   $("#restOfQuestions").show();
   const theYearGiven = $("#currentYear").val();
-  console.log(theYearGiven);
 
   if (theYearGiven === "eighties") {
     $(".yearSlang").text("totally tubular, dude");
