@@ -1,4 +1,5 @@
 .container {
+  background-color: white;
   font-family: 'Rubik', sans-serif;
   border: solid black;
   margin: 30px;
@@ -7,12 +8,20 @@
   background-size: 40px;
   background-repeat: no-repeat;
 }
-
+body {
+  background-image: url(../img/body_background.jpg);
+  background-repeat: repeat;
+}
 #resume, #whoops, #results, #restOfQuestions, #missingInfo {
   display: none;
 }
 footer {
   text-align: center;
+}
+.paperclippy img {
+  width: 300px;
+  float: right;
+  margin-top: -200px;
 }
 .results {
   color: red;

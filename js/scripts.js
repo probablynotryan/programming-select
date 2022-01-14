@@ -4,6 +4,10 @@ $(document).ready(function() {
     location.reload();
   });
 
+  $("#paperclippy").click(function(){
+    $(".paperclippy").hide();
+  });
+
   $("#mainBody").submit(function(event) {
     event.preventDefault();
 
