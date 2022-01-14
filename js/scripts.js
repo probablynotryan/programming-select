@@ -1,3 +1,20 @@
+$(document).ready(function() {
+  $("#mainBody").submit(function(event) {
+    event.preventDefault();
+    questionOne = $("#questionOne").val();
+    questionTwo = $("#questionOne").val();
+    questionThree = $("#questionOne").val();
+    questionFour = $("#questionOne").val();
+    questionFive = $("#questionOne").val();
+
+    console.log(questionFive);  
+    console.log(questionFour);  
+    console.log(questionThree);  
+    console.log(questionTwo);  
+    console.log(questionOne);  
+  });
+});
+
 function getThisStarted() {
   $("#resume").hide();
   $("#whoops").hide();
