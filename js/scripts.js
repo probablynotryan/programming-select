@@ -62,9 +62,18 @@ function getThisStarted() {
   } else if (letsGetStarted === "no") {
     $("#whoops").toggle();
   }
-  
+
 };
 
 function yearResponse() {
   $("#restOfQuestions").show();
+  const theYearGiven = $("#currentYear").val();
+  console.log(theYearGiven);
+
+  if (theYearGiven === "eighties") {
+    $(".yearSlang").text("totally tubular, dude");
+  } else if (theYearGiven === "nineties") { $(".yearSlang").text("da bomb");
+  } else if (theYearGiven === "zeroZero") { $(".yearSlang").text("sweet, peeps");
+  } else if (theYearGiven === "thisYear") { $(".yearSlang").text("gucci, bae")
+  };
 };
