@@ -21,10 +21,11 @@ This page asks a series of (mostly silly) questions using select forms to see wh
 
 ### Setup/Installation Requirements
 
-* git clone this repository to your computer.
-* Run / open "index.html" in a supported browser.
+* Git clone this repository to your computer and run "index.html" in a supported browser.
+* Select answers as necessary from the the containers that appear.
+* Reset to reload the page and start over.
 
-  
+
 
 ## Known Bugs
 
