@@ -15,15 +15,15 @@
 
 ## Description
 
-This page asks a series of (mostly silly) questions using select forms to see what programming language best meets a prospect's needs.
+This page asks a series of (mostly silly) questions using select forms to see what programming language best matches a programming prospect's needs.
 
   
 
 ### Setup/Installation Requirements
 
 * Git clone this repository to your computer and run "index.html" in a supported browser.
-* Select answers as necessary from the the containers that appear.
-* Reset to reload the page and start over.
+* Select answers as prompted from the containers that appear.
+* Click "Start Over" (when avaliable) to reload the page and start over.
 
 
 
