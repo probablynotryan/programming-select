@@ -29,19 +29,19 @@ $(document).ready(function() {
       $(".results").text("Markdown");
       $("#results").toggle();
     } 
-    if (poolOurAnswers >199 && poolOurAnswers <300) {
+    if (poolOurAnswers > 199 && poolOurAnswers < 300) {
       $(".results").text("C#");
       $("#results").toggle();
     } 
-    if (poolOurAnswers >=300 && poolOurAnswers <400) {
+    if (poolOurAnswers >= 300 && poolOurAnswers < 400) {
       $(".results").text("HTML");
       $("#results").toggle();
     } 
-    if (poolOurAnswers >=400 && poolOurAnswers <500) {
+    if (poolOurAnswers >= 400 && poolOurAnswers < 500) {
       $(".results").text("Javascript");
       $("#results").toggle();
     } 
-    if (poolOurAnswers >499) {
+    if (poolOurAnswers > 499) {
       $(".results").text("ERROR! DANGER, WILL ROBINSON! DANGER!");
       $("#results").toggle();
     } 
