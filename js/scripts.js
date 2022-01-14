@@ -46,7 +46,6 @@ $(document).ready(function() {
         $("#results").toggle();
       } 
   });
-  
 });
 
 function getThisStarted() {
@@ -63,6 +62,7 @@ function getThisStarted() {
   } else if (letsGetStarted === "no") {
     $("#whoops").toggle();
   }
+  
 };
 
 function yearResponse() {

@@ -12,7 +12,6 @@ body {
   background-size: 40px;
   background-repeat: no-repeat;
 }
-
 #resume, #whoops, #results, #restOfQuestions, #missingInfo {
   display: none;
   background-color: white;
