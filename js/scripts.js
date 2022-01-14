@@ -8,3 +8,10 @@ function getThisStarted() {
     $("#whoops").toggle();
   }
 };
+function yearResponse() {
+$("#restOfQuestions").show();
+  const currentYear = $("#currentYear").val();
+  if (currentYear === "eighties") {
+    console.log("the 80s");
+  } 
+};

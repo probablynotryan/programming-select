@@ -4,10 +4,6 @@
   padding: 30px;
 }
 
-#resume {
-  display: none;
-}
-
-#whoops {
+#resume, #restOfQuestions, #whoops {
   display: none;
 }
