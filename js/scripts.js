@@ -12,7 +12,6 @@ $(document).ready(function() {
     const questionFive = parseInt($("#questionFive").val());
 
     const poolOurAnswers = questionOne + questionTwo + questionThree + questionFour + questionFive;
-    console.log(poolOurAnswers);
 
       if (questionOne === 0 || questionTwo === 0 || questionThree === 0 || questionFour === 0 || questionFive === 0){
         $("#missingInfo").toggle();
@@ -48,13 +47,16 @@ function getThisStarted() {
   $("#results").hide();
   $("#restOfQuestions").hide();
   $("#missingInfo").hide();
+
   const letsGetStarted = $("#getStarted").val();
+
   if (letsGetStarted === "yes") {
     $("#resume").toggle();
   } else if (letsGetStarted === "no") {
     $("#whoops").toggle();
   }
 };
+
 function yearResponse() {
-$("#restOfQuestions").show();
+  $("#restOfQuestions").show();
 };
