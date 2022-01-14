@@ -11,3 +11,8 @@
 #resume, #whoops, #results, #restOfQuestions, #missingInfo {
   display: none;
 }
+
+.results {
+  color: red;
+  font-size: 30px;
+}
