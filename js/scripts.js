@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+  $("#startOver").click(function(){
+    location.reload();
+  });
+
   $("#mainBody").submit(function(event) {
     event.preventDefault();
 
@@ -10,14 +15,12 @@ $(document).ready(function() {
     const questionThree = parseInt($("#questionThree").val());
     const questionFour = parseInt($("#questionFour").val());
     const questionFive = parseInt($("#questionFive").val());
-
     const poolOurAnswers = questionOne + questionTwo + questionThree + questionFour + questionFive;
 
       if (questionOne === 0 || questionTwo === 0 || questionThree === 0 || questionFour === 0 || questionFive === 0){
         $("#missingInfo").toggle();
         return;
       }
-
       if (poolOurAnswers > 0 && poolOurAnswers < 200) {
         $(".results").text("Markdown");
         $("#results").toggle();
@@ -39,6 +42,7 @@ $(document).ready(function() {
         $("#results").toggle();
       } 
   });
+  
 });
 
 function getThisStarted() {
