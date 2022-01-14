@@ -13,5 +13,11 @@ $("#restOfQuestions").show();
   const currentYear = $("#currentYear").val();
   if (currentYear === "eighties") {
     console.log("the 80s");
+  } else if (currentYear === "nineties") {
+    console.log("the 90s");
+  } if (currentYear === "zeroZero") {
+    console.log("the 00s");
+  }   if (currentYear === "thisYear") {
+    console.log("recent year");
   } 
 };

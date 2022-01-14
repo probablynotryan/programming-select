@@ -2,6 +2,9 @@
   border: solid black;
   margin: 50px;
   padding: 30px;
+  background-image: url(../img/quotation_background.jpg);
+  background-size: 80px;
+  background-repeat: no-repeat;
 }
 
 #resume, #restOfQuestions, #whoops {
