@@ -8,6 +8,6 @@
   background-repeat: no-repeat;
 }
 
-#resume, #whoops, #restOfQuestions {
+#resume, #whoops, #restOfQuestions, #missingInfo {
   display: none;
 }

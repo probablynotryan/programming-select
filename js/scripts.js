@@ -1,17 +1,23 @@
 $(document).ready(function() {
   $("#mainBody").submit(function(event) {
     event.preventDefault();
-    questionOne = $("#questionOne").val();
-    questionTwo = $("#questionOne").val();
-    questionThree = $("#questionOne").val();
-    questionFour = $("#questionOne").val();
-    questionFive = $("#questionOne").val();
+    $("#missingInfo").hide();
+    questionOne = parseInt($("#questionOne").val());
+    questionTwo = parseInt($("#questionTwo").val());
+    questionThree = parseInt($("#questionThree").val());
+    questionFour = parseInt($("#questionFour").val());
+    questionFive = parseInt($("#questionFive").val());
 
     console.log(questionFive);  
     console.log(questionFour);  
     console.log(questionThree);  
     console.log(questionTwo);  
     console.log(questionOne);  
+
+      if (questionOne === 0 || questionTwo === 0 || questionThree === 0 || questionFour === 0 || questionFive ===0){
+        console.log("if statement checks out")
+        $("#missingInfo").toggle();
+      }
   });
 });
 

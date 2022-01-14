@@ -45,7 +45,7 @@
     <form id="mainBody">
       </label>
       <label for="questionOne">1. What are you looking to create?</label>
-      <select id="questionOne" class="form-control" onchange="goalQuestion()">
+      <select id="questionOne" class="form-control">
         <option value=0>-- Select Answer --</option>
         <option value=1>An email to my grandson, Nathan.</option>
         <option value=4>The next hot videogame!</option>
@@ -54,14 +54,14 @@
       </select>
       <br>
       <label for="questionTwo">2. How do you feel about crocs?</label>
-      <select id="questionTwo" class="form-control" onchange="crocQuestion()">
+      <select id="questionTwo" class="form-control">
         <option value=0>-- Select Answer --</option>
         <option value="love">I absolutely love crocs!</option>
         <option value="loveagain">Crocs are the best! But a different option.</option>
       </select>
       <br>
       <label for="questionThree">3. We've been trying to reach you about your car's extended warranty. That being said, how wide is block silver eight four Titanic?</label>
-      <select id="questionThree" class="form-control" onchange="randomQuestion()">
+      <select id="questionThree" class="form-control">
         <option value=0>-- Select Answer --</option>
         <option value=5>Eight bananas.</option>
         <option value=2>I left my pants on the yacht.</option>
@@ -70,7 +70,7 @@
       </select>
       <br>
       <label for="questionFour">4. How many survey questions did we need?</label>
-      <select id="questionFour" class="form-control" onchange="randomQuestion()">
+      <select id="questionFour" class="form-control">
         <option value=0>-- Select Answer --</option>
         <option value=2>Five. It's clearly stated in the project description.</option>
         <option value=3>Four. You're all done!</option>
@@ -79,8 +79,8 @@
       </select>
       <br>
       <label for="questionFive">5. Is this the last question?</label>
-      <select id="questionFive" class="form-control" onchange="randomQuestion()">
-        <option>-- Select Answer --</option>
+      <select id="questionFive" class="form-control">
+        <option value=0>-- Select Answer --</option>
         <option value=2>I hope so. This is silly.</option>
         <option value=1>Yes, but I wish there were more!</option>
       </select>
@@ -88,6 +88,9 @@
       <button type="submit" id="allDone" class="btn-dark">What language is best for me?</button>
     </form>
     </div>
+    <div class="container" id="missingInfo">
+      <p>I'm sorry, friend. It appears you've missed filling out one of our questions. Please answer all of them and try again.</p>
+      <form>
   </div>
 </body>
 </html>
