@@ -23,13 +23,13 @@ $(document).ready(function() {
         $("#results").toggle();
       } 
       if (poolOurAnswers >199 && poolOurAnswers <300) {
-        console.log('c#')
+        $(".results").text("C#");
       } 
       if (poolOurAnswers >299 && poolOurAnswers <400) {
-        console.log('html')
+        $(".results").text("HTML");
       } 
       if (poolOurAnswers >399 && poolOurAnswers <500) {
-        console.log('javascript')
+        $(".results").text("Javascript");
       } 
   });
 });
