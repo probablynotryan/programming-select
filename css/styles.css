@@ -11,7 +11,9 @@
 #resume, #whoops, #results, #restOfQuestions, #missingInfo {
   display: none;
 }
-
+footer {
+  text-align: center;
+}
 .results {
   color: red;
   font-size: 30px;
