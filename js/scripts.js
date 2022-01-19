@@ -24,27 +24,22 @@ $(document).ready(function() {
     if (questionOne === 0 || questionTwo === 0 || questionThree === 0 || questionFour === 0 || questionFive === 0){
       $("#missingInfo").toggle();
       return;
-    }
-    if (poolOurAnswers > 0 && poolOurAnswers < 200) {
+    } else if (poolOurAnswers > 0 && poolOurAnswers < 200) {
       $(".results").text("Markdown");
       $("#results").toggle();
-    } 
-    if (poolOurAnswers > 199 && poolOurAnswers < 300) {
+    } else if (poolOurAnswers > 199 && poolOurAnswers < 300) {
       $(".results").text("C#");
       $("#results").toggle();
-    } 
-    if (poolOurAnswers >= 300 && poolOurAnswers < 400) {
+    } else if (poolOurAnswers >= 300 && poolOurAnswers < 400) {
       $(".results").text("HTML");
       $("#results").toggle();
-    } 
-    if (poolOurAnswers >= 400 && poolOurAnswers < 500) {
+    } else if (poolOurAnswers >= 400 && poolOurAnswers < 500) {
       $(".results").text("Javascript");
       $("#results").toggle();
-    } 
-    if (poolOurAnswers > 499) {
+    } else {
       $(".results").text("ERROR! DANGER, WILL ROBINSON! DANGER!");
       $("#results").toggle();
-    } 
+    };
   });
 });
 
@@ -70,8 +65,13 @@ function yearResponse() {
 
   if (theYearGiven === "eighties") {
     $(".yearSlang").text("totally tubular, dude");
-  } else if (theYearGiven === "nineties") { $(".yearSlang").text("da bomb");
-  } else if (theYearGiven === "zeroZero") { $(".yearSlang").text("sweet, peeps");
-  } else if (theYearGiven === "thisYear") { $(".yearSlang").text("gucci, bae")
+  } else if (theYearGiven === "nineties") {
+    $(".yearSlang").text("da bomb");
+  } else if (theYearGiven === "zeroZero") {
+    $(".yearSlang").text("sweet, peeps");
+  } else if (theYearGiven === "thisYear") {
+    $(".yearSlang").text("gucci, bae");
+  } else {
+    return;
   };
 };
