@@ -38,7 +38,7 @@ $(document).ready(function() {
     } else {
       $(".results").text("ERROR! DANGER, WILL ROBINSON! DANGER!");
       $("#results").toggle();
-    };
+    }
   });
 });
 
@@ -55,7 +55,7 @@ function getThisStarted() {
     $("#resume").toggle();
   } else {
     $("#whoops").toggle();
-  };
+  }
 };
 
 function yearResponse() {
@@ -72,5 +72,5 @@ function yearResponse() {
     $(".yearSlang").text("gucci, bae");
   } else {
     return;
-  };
+  }
 };
