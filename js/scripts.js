@@ -21,9 +21,8 @@ $(document).ready(function() {
     const questionFive = parseInt($("#questionFive").val());
     const poolOurAnswers = questionOne + questionTwo + questionThree + questionFour + questionFive;
 
-    if (questionOne === 0 || questionTwo === 0 || questionThree === 0 || questionFour === 0 || questionFive === 0){
+    if (questionOne === 0 || questionTwo === 0 || questionThree === 0 || questionFour === 0 || questionFive === 0) {
       $("#missingInfo").toggle();
-      return;
     } else if (poolOurAnswers > 0 && poolOurAnswers < 200) {
       $(".results").text("Markdown");
       $("#results").toggle();
@@ -54,9 +53,9 @@ function getThisStarted() {
 
   if (letsGetStarted === "yes") {
     $("#resume").toggle();
-  } else if (letsGetStarted === "no") {
+  } else {
     $("#whoops").toggle();
-  }
+  };
 };
 
 function yearResponse() {
